@@ -27,7 +27,6 @@ public class RecipieActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recipie);
 
         ArrayList<String> selected = getIntent().getStringArrayListExtra("selected");
-        Log.d("retsept", "length" + selected.size());
         try {
             JSONArray array = new JSONArray(loadJSONFromAsset(this));
             int bestRecipeIndex = 0;
@@ -46,11 +45,27 @@ public class RecipieActivity extends AppCompatActivity {
                 }
             }
 
+
               Log.d("retsept", "Best match "+bestRecipeIndex);
               Log.d("retsept", "Best matches "+bestRecipeMatches);
+
             JSONObject retsept = array.getJSONObject(bestRecipeIndex);
+            //Otsin puuduolevaid asju
+            String missing = "";
+            for (int i = 0; i < retsept.getJSONArray("ingredients").length(); i++) {
+                if(!selected.contains(retsept.getJSONArray("ingredients").get(i))){
+                    Log.d("retsept", "Missing ingredients: "+retsept.getJSONArray("ingredients").get(i));
+                    missing += retsept.getJSONArray("ingredients").get(i) + " ";
+
+                }
+
+            }
+
+            // Otsi vaated
             ImageView recipeImage = findViewById(R.id.recipeImage);
             TextView recipeTutorial = findViewById(R.id.recipeTutorial);
+
+            //Vaadete täitmine
             recipeTutorial.setText(retsept.getString("tutorial"));
             Picasso.with(this).load(retsept.getString("image")).into(recipeImage);
         } catch (JSONException e) {
