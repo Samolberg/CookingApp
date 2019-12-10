@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Cooking App</string>
     <string name="ingredientsWelcome">Ingredients list</string>
+    <string name="chicken">Kana</string>
+    <string name="meat">Liha</string>
+    <string name="calculate">Näita mida süüa teen</string>
+    <string name="guide">juhend</string>
 </resources>
