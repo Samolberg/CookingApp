@@ -66,10 +66,11 @@ public class RecipieActivity extends AppCompatActivity {
             // Otsi vaated
             ImageView recipeImage = findViewById(R.id.recipeImage);
             TextView recipeTutorial = findViewById(R.id.recipeTutorial);
-            TextView shoppingListView = findViewById(R.id.shoppingListView);
+            TextView shoppingListView =(TextView) findViewById(R.id.shoppingListView);
 
             //Vaadete täitmine
-         //   shoppingListView.setText(retsept.getString(missing));
+          //  String missingList = missing;
+          //  shoppingListView.setText(missingList);
             recipeTutorial.setText(retsept.getString("tutorial"));
             Picasso.with(this).load(retsept.getString("image")).into(recipeImage);
         } catch (JSONException e) {

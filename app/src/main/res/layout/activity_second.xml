@@ -8,6 +8,15 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/dividerOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dividerOne"
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,7 +52,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
-
+        <TextView
+            android:id="@+id/dividerTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dividerTwo"
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -90,13 +106,22 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/feta" />
+                android:text="@string/tomato" />
 
             <Switch
-                android:id="@+id/fetaSwitch"
+                android:id="@+id/tomatoSwitch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/dividerThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dividerThree"
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -108,10 +133,10 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/tomato" />
+                android:text="@string/feta" />
 
             <Switch
-                android:id="@+id/tomatoSwitch"
+                android:id="@+id/fetaSwitch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>

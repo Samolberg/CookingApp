@@ -10,4 +10,7 @@
     <string name="calculate">Näita mida süüa teen</string>
     <string name="shopping">Näita mida poest vaja</string>
     <string name="guide">juhend</string>
+    <string name="dividerOne">Lihatooted</string>
+    <string name="dividerTwo">Aedviljad</string>
+    <string name="dividerThree">Piimatooted</string>
 </resources>
