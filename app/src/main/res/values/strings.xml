@@ -3,6 +3,11 @@
     <string name="ingredientsWelcome">Ingredients list</string>
     <string name="chicken">Kana</string>
     <string name="meat">Liha</string>
+    <string name="feta">Feta</string>
+    <string name="tomato">Tomat</string>
+    <string name="carrot">Porgand</string>
+    <string name="potato">Kartul</string>
     <string name="calculate">Näita mida süüa teen</string>
+    <string name="shopping">Näita mida poest vaja</string>
     <string name="guide">juhend</string>
 </resources>

@@ -1,0 +1,11 @@
+[{
+  "name": "Krõbe kana",
+  "ingredients": ["chicken", "carrot", "feta", "tomato"],
+  "image": "https://www.theblackpeppercorn.com/wp-content/uploads/2014/05/How-to-smoke-a-whole-chicken-5.jpg",
+  "tutorial": "Lükka kana ahju ja lükka see endale sisse"
+},{
+  "name": "Ahjuliha",
+  "ingredients": ["meat", "potato", "gravy"],
+  "image": "https://supervalu.ie/thumbnail/720x400/var/files/good-food-karma/recipe/slow-cooked-beef-mustar-mash-recipe.jpg",
+  "tutorial": "Lükka liha ahju ja hakka sööma"
+}]

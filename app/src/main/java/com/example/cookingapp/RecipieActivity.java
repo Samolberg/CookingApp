@@ -3,8 +3,10 @@ package com.example.cookingapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -64,14 +66,22 @@ public class RecipieActivity extends AppCompatActivity {
             // Otsi vaated
             ImageView recipeImage = findViewById(R.id.recipeImage);
             TextView recipeTutorial = findViewById(R.id.recipeTutorial);
+            TextView shoppingListView = findViewById(R.id.shoppingListView);
 
             //Vaadete täitmine
+         //   shoppingListView.setText(retsept.getString(missing));
             recipeTutorial.setText(retsept.getString("tutorial"));
             Picasso.with(this).load(retsept.getString("image")).into(recipeImage);
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
+    }
+
+    //Nupp mis viib ostunimekirja
+    public void toShoppingList (View view){
+        Intent shoppingList = new Intent (this, ShoppingListActivity.class);
+        startActivity(shoppingList);
     }
 
     public String loadJSONFromAsset(Context context) {
