@@ -22,6 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RecipieActivity extends AppCompatActivity {
+    String missing = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +54,7 @@ public class RecipieActivity extends AppCompatActivity {
 
             JSONObject retsept = array.getJSONObject(bestRecipeIndex);
             //Otsin puuduolevaid asju
-            String missing = "";
+            missing = "";
             for (int i = 0; i < retsept.getJSONArray("ingredients").length(); i++) {
                 if(!selected.contains(retsept.getJSONArray("ingredients").get(i))){
                     Log.d("retsept", "Missing ingredients: "+retsept.getJSONArray("ingredients").get(i));
@@ -66,11 +67,12 @@ public class RecipieActivity extends AppCompatActivity {
             // Otsi vaated
             ImageView recipeImage = findViewById(R.id.recipeImage);
             TextView recipeTutorial = findViewById(R.id.recipeTutorial);
-            TextView shoppingListView =(TextView) findViewById(R.id.shoppingListView);
+
 
             //Vaadete täitmine
-          //  String missingList = missing;
-          //  shoppingListView.setText(missingList);
+
+
+          //  Log.d("shoppinglist", missing);
             recipeTutorial.setText(retsept.getString("tutorial"));
             Picasso.with(this).load(retsept.getString("image")).into(recipeImage);
         } catch (JSONException e) {
@@ -82,6 +84,7 @@ public class RecipieActivity extends AppCompatActivity {
     //Nupp mis viib ostunimekirja
     public void toShoppingList (View view){
         Intent shoppingList = new Intent (this, ShoppingListActivity.class);
+        shoppingList.putExtra("MISSING", missing);
         startActivity(shoppingList);
     }
 
