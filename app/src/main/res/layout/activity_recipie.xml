@@ -28,14 +28,20 @@
         app:layout_constraintTop_toBottomOf="@+id/recipeImage">
 
     </TextView>
+
     <Button
+        android:id="@+id/toShoppingList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="@string/shopping"
+        android:layout_marginTop="116dp"
+        android:gravity="center"
         android:onClick="toShoppingList"
-        app:layout_constraintTop_toBottomOf="@id/recipeTutorial"
-        android:id="@+id/toShoppingList">
+        android:text="@string/shopping"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recipeTutorial">
 
     </Button>
 

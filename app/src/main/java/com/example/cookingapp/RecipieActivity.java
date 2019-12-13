@@ -58,7 +58,7 @@ public class RecipieActivity extends AppCompatActivity {
             for (int i = 0; i < retsept.getJSONArray("ingredients").length(); i++) {
                 if(!selected.contains(retsept.getJSONArray("ingredients").get(i))){
                     Log.d("retsept", "Missing ingredients: "+retsept.getJSONArray("ingredients").get(i));
-                    missing += retsept.getJSONArray("ingredients").get(i) + " ";
+                    missing += retsept.getJSONArray("ingredients").get(i) + "\n";
 
                 }
 
