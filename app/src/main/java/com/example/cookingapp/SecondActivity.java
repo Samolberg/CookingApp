@@ -26,18 +26,24 @@ public class SecondActivity extends AppCompatActivity {
         Switch carrotSwitch = findViewById(R.id.carrotSwitch);
         Switch tomatoSwitch = findViewById(R.id.tomatoSwitch);
         Switch potatoSwitch = findViewById(R.id.potatoSwitch);
+        Switch koorSwitch = findViewById(R.id.koorSwitch);
+        Switch kapsasSwitch = findViewById(R.id.kapsasSwitch);
         if (chickenSwitch.isChecked()){
-            selected.add("chicken");
+            selected.add("kana");
         }if (meatSwitch.isChecked()){
-            selected.add("meat");
+            selected.add("liha");
         }if (fetaSwitch.isChecked()){
             selected.add("feta");
-        }if (carrotSwitch.isChecked()){
-            selected.add("carrot");
         }if (tomatoSwitch.isChecked()){
-            selected.add("tomato");
+            selected.add("tomat");
         }if (potatoSwitch.isChecked()){
-            selected.add("potato");
+            selected.add("kartul");
+        }if (carrotSwitch.isChecked()){
+            selected.add("porgand");
+        }if (koorSwitch.isChecked()){
+            selected.add("koor");
+        }if (kapsasSwitch.isChecked()){
+            selected.add("hapukapsas");
         }
         Intent recipieIntent = new Intent (this, RecipieActivity.class);
         recipieIntent.putStringArrayListExtra("selected",selected);

@@ -29,7 +29,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/chicken" />
+                android:text="@string/kana" />
 
             <Switch
                 android:id="@+id/chickenSwitch"
@@ -47,7 +47,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/meat" />
+                android:text="@string/liha" />
 
             <Switch
                 android:id="@+id/meatSwitch"
@@ -72,7 +72,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/carrot" />
+                android:text="@string/porgand" />
 
             <Switch
                 android:id="@+id/carrotSwitch"
@@ -90,7 +90,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/potato" />
+                android:text="@string/kartul" />
 
             <Switch
                 android:id="@+id/potatoSwitch"
@@ -108,10 +108,27 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/tomato" />
+                android:text="@string/tomat" />
 
             <Switch
                 android:id="@+id/tomatoSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/kapsas" />
+
+            <Switch
+                android:id="@+id/kapsasSwitch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -141,6 +158,25 @@
                 android:id="@+id/fetaSwitch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/koor" />
+
+            <Switch
+                android:id="@+id/koorSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
         </LinearLayout>
         <Button
             android:layout_width="wrap_content"

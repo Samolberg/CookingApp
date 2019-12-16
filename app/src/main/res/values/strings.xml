@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">Cooking App</string>
     <string name="ingredientsWelcome">Ingredients list</string>
-    <string name="chicken">Kana</string>
-    <string name="meat">Liha</string>
+    <string name="kana">Kana</string>
+    <string name="liha">Liha</string>
     <string name="feta">Feta</string>
-    <string name="tomato">Tomat</string>
-    <string name="carrot">Porgand</string>
-    <string name="potato">Kartul</string>
+    <string name="tomat">Tomat</string>
+    <string name="porgand">Porgand</string>
+    <string name="kartul">Kartul</string>
     <string name="calculate">Näita mida süüa teen</string>
     <string name="shopping">Näita mida poest vaja</string>
     <string name="shoppingEmpty">Sul on kõik vajalik kodus olemas, head kokkamist!</string>
@@ -16,4 +16,6 @@
     <string name="dividerOne">Lihatooted</string>
     <string name="dividerTwo">Aedviljad</string>
     <string name="dividerThree">Piimatooted</string>
+    <string name="koor">Koor</string>
+    <string name="kapsas">Kapsas</string>
 </resources>
