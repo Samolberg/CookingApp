@@ -18,4 +18,7 @@
     <string name="dividerThree">Piimatooted</string>
     <string name="koor">Koor</string>
     <string name="kapsas">Kapsas</string>
+    <string name="recipeName">filler</string>
+    <string name="greetings">Köögiabiline</string>
+    <string name="intro">Rakenduse kasutamiseks, vali mis sul on kodus olemas ning vastuseks saad lähima retsepti, mis vastab tehtud valikule. Puuduolevad koostisosadest tehakse ostunimekiri.</string>
 </resources>
