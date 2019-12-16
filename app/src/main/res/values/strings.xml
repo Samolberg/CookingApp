@@ -9,6 +9,7 @@
     <string name="potato">Kartul</string>
     <string name="calculate">Näita mida süüa teen</string>
     <string name="shopping">Näita mida poest vaja</string>
+    <string name="shoppingEmpty">Sul on kõik vajalik kodus olemas, head kokkamist!</string>
     <string name="shoppingTitle">Sul on poest vaja järgmiseid asju:</string>
     <string name="shoppingGoodbye">Pane kokku uus retsept</string>
     <string name="guide">juhend</string>

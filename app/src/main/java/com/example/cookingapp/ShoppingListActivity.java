@@ -15,6 +15,13 @@ public class ShoppingListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_shopping_list);
         TextView shoppingListView = findViewById(R.id.shoppingListView);
         shoppingListView.setText(getIntent().getExtras().getString("MISSING"));
+        String missingList = getIntent().getExtras().getString("MISSING");
+
+        if (missingList.length() != 0){
+            findViewById(R.id.shoppingListViewEmpty).setVisibility(View.GONE);
+        }else {
+            findViewById(R.id.shoppingListTitle).setVisibility(View.GONE);
+        }
     }
 
     public void shoppingListToMain (View view){
@@ -22,6 +29,7 @@ public class ShoppingListActivity extends AppCompatActivity {
 
         startActivity(toMain);
     }
+
 
 
 }

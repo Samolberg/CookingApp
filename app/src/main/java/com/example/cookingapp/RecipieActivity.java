@@ -68,9 +68,7 @@ public class RecipieActivity extends AppCompatActivity {
             ImageView recipeImage = findViewById(R.id.recipeImage);
             TextView recipeTutorial = findViewById(R.id.recipeTutorial);
 
-
             //Vaadete täitmine
-
 
           //  Log.d("shoppinglist", missing);
             recipeTutorial.setText(retsept.getString("tutorial"));
